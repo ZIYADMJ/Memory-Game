@@ -96,15 +96,14 @@ export default function GameBoard() {
       <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
         <h1 className="text-3xl font-bold text-center text-purple-800 mb-6">Memory Game</h1>
         
-        <div className="flex justify-between mb-4">
-          <div className={`text-xl font-semibold ${getTimerColor()}`}>
-            Time Left: {timeLeft}s
-          </div>
-          <div className="text-xl font-semibold text-purple-700">
-            Attempts: {attempts}
-          </div>
-        </div>
-        
+        <div className="flex justify-between mb-4 space-x-4">
+        <div className={`text-xl font-semibold ${getTimerColor()}`}>
+           Time Left: {timeLeft}s
+       </div>
+       <div className="text-xl font-semibold text-purple-700">
+           Attempts: {attempts}
+       </div>
+     </div>  
         <div className={`text-xl font-bold text-center mb-4 ${getMessageColor()}`}>
           {message}
         </div>
